@@ -1,0 +1,10 @@
+.code-person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.code-person > h1 {
+    display: inline;
+    margin: .5em;
+}

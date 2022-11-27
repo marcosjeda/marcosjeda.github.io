@@ -1,0 +1,12 @@
+<div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">{{ titulo }}</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col" *ngFor="let area of conocimientos">
+        <div class="pb-2">
+            <img [src]="area.icono" [alt]="area.icono" width="200">
+        </div>
+        <h3 class="fs-2">{{ area.titulo }}</h3>
+        <p>{{ area.descripcion }}</p>
+      </div>
+    </div>
+  </div>

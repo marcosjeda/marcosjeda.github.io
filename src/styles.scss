@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+@import "node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+.code-tag {
+    color: #5c5c5c;
+}
+
+.my-name {
+    color: #2e8fe6;
+}
+
+h1#name::after {
+    content: "_";
+    color: black;
+    //background-color: black;
+    animation-name: cursor;
+    animation-duration: 700ms;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes cursor {
+    50%  {
+        //background-color:black;
+        color: black;
+    }
+    100% {
+        //background-color:white;
+        color: white;
+    }
+  }
